@@ -1,11 +1,11 @@
 #include <stdio.c>
 
 /**
- * main blablabla
+ * main - entry point
  *
- * balaaaaaaaaaaaaaaaaaaaaa
+ * discribtion : A C program that prints with put function
  *
- * blaaaaaaaaaaaaaaaaaaaaaa
+ * Return: Always 0 (Success)
  */
 
 int main(void)
