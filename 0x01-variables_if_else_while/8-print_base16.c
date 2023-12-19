@@ -10,11 +10,13 @@
 
 int main(void)
 {
-	char x = 1;
+	char x = 48;
 
-	while (x <= 9)
+	while (x <= 102)
 	{
-		putchar(x + '0');
+	if (x == 58)
+	x += 40;
+		putchar(x);
 		x++;
 	}
 	putchar('\n');
