@@ -10,11 +10,11 @@
 
 int main(void)
 {
-	char x = 48;
+	int x = 0;
 
-	while (x <= 57)
+	while (x <= 9)
 	{
-		putchar(x);
+		putchar(x + '0');
 		x++;
 	}
 	putchar('\n');
