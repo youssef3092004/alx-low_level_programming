@@ -12,7 +12,7 @@ for (i = 1 ; i <= 10; i++)
 {
 char x = 97;
 
-for (; x < 122 ; x++)
+for (; x <= 122 ; x++)
 {
 putchar(x);
 }
