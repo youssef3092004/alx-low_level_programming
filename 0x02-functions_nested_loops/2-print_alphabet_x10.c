@@ -2,17 +2,19 @@
 
 /**
  * print_alphabet - utilizers on the _putchar function to print
- *		the alphabet a - z
+ *              the alphabet a - z
 */
 
 void print_alphabet(void)
 {
+for (int i = 0 ; i < 10 ; i++)
+{
 	char x = 97;
 
-	while (x <= 122)
+for (; x < 122 ; x++)
 	{
-		putchar(x);
-		x++;
-	}
-	putchar('\n');
+putchar(x);
+}
+putchar('\n');
+}
 }
