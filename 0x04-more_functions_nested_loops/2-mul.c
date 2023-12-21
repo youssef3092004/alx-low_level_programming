@@ -11,5 +11,5 @@ int mul(int a, int b)
 {
 int z = a * b;
 
-printf("%d", d)
+putchar(d);
 }
