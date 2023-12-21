@@ -1,9 +1,7 @@
 #include "main.h"
 
 /**
- * more_numbers - nmbr fct
- *
- * Return: Always 0 (success)
+ * more_numbers - print more numbers
  */
 
 void more_numbers(void)
@@ -12,12 +10,12 @@ void more_numbers(void)
 
 	for (i = 1; i <= 10; i++)
 	{
-		for (j = 0; j < 15; j++)
+		for (j = 0; j <= 14; j++)
 		{
-			if (j > 9)
-			_putchar('1');
-			_putchar(j % 10 + '0');
+			if (j >= 10)
+				_putchar('1');
+			_putchar (j % 10 + '0');
 		}
-			_putchar('\n');
-		}
+		_putchar('\n');
+	}
 }
