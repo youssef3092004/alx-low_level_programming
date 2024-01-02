@@ -8,15 +8,14 @@
  * Return: Nothing
 */
 
-void rev_string(char *s)
-{
-int i = 0;
+void rev_string(char *s){
+int i,f;
 
-	while (s[i])
-		i++;
-	while (i--)
-	{
-		putchar(s[i]);
-	}
-	putchar('\n');
+for (i = 1; i < s[i] ; i++){
+f++;
+}
+for (i = f; i >= 0 ; i--){
+_putchar(s[i];
+}
+_putchar('\n');
 }
