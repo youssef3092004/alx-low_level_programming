@@ -8,18 +8,15 @@
  *
  * Return: pointer to the resulting string @dest
 */
-
 char *_strcat(char *dest, char *src)
 {
-int x = 0, y;
+int i, j = 0;
 
-while (dest[x])
+while ( dest[i] != '\0' ) ++i;
+
+for ( j = 0; src[j] != '\0'; j++ )
 {
-x++;
-}
-for (y = 0 ; src[y] ; y++)
-{
-dest[x++] = src[y];
+dest[i++] = src[j];
 }
 return (dest);
 }
