@@ -14,3 +14,4 @@ while (n > 0)
 dest[i++] = src;
 }
 return (dest)
+>
