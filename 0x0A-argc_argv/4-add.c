@@ -8,7 +8,7 @@
  */
 int main(int argc, char argv[])
 {
-int x = 0, i;
+int sum = 0, i;
 if (argc == 1)
 {
 printf("%d\n", 0);
