@@ -1,12 +1,12 @@
 #include<stdio.h>
 
 /**
- * main - prints program name followd by new line
+ * main - Entry point
  * @argc: this is a int
  * @argv: this is a array
- * return : 0
+ * Return: always 0 (Succes)
  */
-int main(int argc, char const * argv[])
+int main(int argc, char const *argv[])
 {
 (void)argc;
 printf("%s\n", argv[0]);
