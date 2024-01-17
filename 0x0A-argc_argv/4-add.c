@@ -13,7 +13,7 @@ if (argc == 1)
 {
 printf("%d\n", 0);
 }
-else if (argv >= '65' && argv <= '90' || argv >= '97' && argv <= '122')
+else if (argv[argc] >= 'A' && argv[argc] <= 'Z' || argv[argc] >= 'a' && argv[argc] <= 'z')
 {
 printf("Error\n")
 return (1);
