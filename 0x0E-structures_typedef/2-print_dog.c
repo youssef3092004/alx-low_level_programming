@@ -15,3 +15,4 @@ printf("Name: %s", (*d).name ? (*d).name : "(nil)");
 printf("Age: %f", (*d).age);
 printf("Name: %s", (*d).owner ? (*d).owner : "(nil)");
 }
+}
