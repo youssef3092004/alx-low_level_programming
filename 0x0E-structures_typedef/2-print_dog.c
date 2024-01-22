@@ -3,7 +3,7 @@
 #include <stdlib.h>
 /**
  * print_dog - print dog
- * @*d: is a pointer
+ * @*d: print dog
  * @d: addres of dog
  * return: void
  */
