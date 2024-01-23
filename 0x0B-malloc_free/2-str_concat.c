@@ -5,6 +5,7 @@
  * Return: lenth
  */
 int str_len(char *dest)
+
 {
 int lenth;
 
@@ -27,16 +28,16 @@ if (s1 == NULL)
 s1 = '\0';
 if (s2 == NULL)
 s2 = '\0';
-int lenth_of_s1 
-int lenth_of_s2
-lenth_of_s1 = str_len(s1);
-lenth_of_s2 = str_len(s2);
-ptr = malloc((lenth_of_s1 + lenth_of_s2) * sizeof(char) + 1);
+int lenths1 
+int lenths2
+lenths1 = str_len(s1);
+lenths2 = str_len(s2);
+ptr = malloc((lenths1 + lenths2) * sizeof(char) + 1);
 if (ptr == 0)
 return (NULL);
-for (i = 0 ; lenth_of_s1 + lenth_of_s2 ; i++)
+for (i = 0 ; lenths1 + lenths2 ; i++)
 {
-if (i < lenth_of_s1)
+if (i < lenths1)
 {
 ptr[i] = s1[i];
 }
