@@ -17,7 +17,9 @@ if (str == 0)
 return (NULL);
 }
 for (j = 0; str[j] != '\0'; j++)
-;
+{
+
+}
 arr = malloc(j * sizeof(*str) + 1);
 if (arr == 0)
 {
