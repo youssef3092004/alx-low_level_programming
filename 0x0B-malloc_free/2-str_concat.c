@@ -30,7 +30,7 @@ if (s2 == NULL)
 s2 = "\0";
 lenths1 = str_len(s1);
 lenths2 = str_len(s2);
-ptr = malloc((lenths1 + lenths2) * sizeof(char) + 1);
+ptr = malloc((lenths1 + lenths2)*sizeof(char) + 1);
 if (ptr == 0)
 return (NULL);
 for (i = 0 ; i < lenths1 + lenths2 ; i++)
