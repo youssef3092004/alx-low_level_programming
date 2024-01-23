@@ -24,12 +24,12 @@ char *str_concat(char *s1, char *s2)
 {
 int i;
 char *ptr;
+int lenths1;
+int lenths2;
 if (s1 == NULL)
 s1 = '\0';
 if (s2 == NULL)
 s2 = '\0';
-int lenths1;
-int lenths2;
 lenths1 = str_len(s1);
 lenths2 = str_len(s2);
 ptr = malloc((lenths1 + lenths2) * sizeof(char) + 1);
