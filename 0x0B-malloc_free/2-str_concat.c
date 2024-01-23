@@ -4,12 +4,11 @@
  * @dest: it's a string
  * Return: lenth
  */
- 
 char *str_len(char *dest)
 {
 int lenth = 0;
 
-for (; dest[lenth] !='\0'; lenth++)
+for (; dest[lenth] != '\0'; lenth++)
 {
 }
 return (lenth);
