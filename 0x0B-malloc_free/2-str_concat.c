@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- * *str_len - calculate the lenth
+ * str_len - calculate the lenth
  * @dest: it's a string
  * Return: lenth
  */
-char *str_len(char *dest)
+char str_len(char *dest)
 {
 int lenth = 0;
 
