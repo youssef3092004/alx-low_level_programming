@@ -4,7 +4,7 @@
  * @dest: it's a string
  * Return: lenth
  */
-char str_len(char *dest)
+int str_len(char *dest)
 {
 int lenth;
 
@@ -27,8 +27,10 @@ if (s1 == NULL)
 s1 = '\0';
 if (s2 == NULL)
 s2 = '\0';
-int lenth_of_s1 = str_len(s1);
-int lenth_of_s2 = str_len(s2);
+int lenth_of_s1 
+int lenth_of_s2
+lenth_of_s1 = str_len(s1);
+lenth_of_s2 = str_len(s2);
 ptr = malloc((lenth_of_s1 + lenth_of_s2) * sizeof(char) + 1);
 if (ptr == 0)
 return (NULL);
