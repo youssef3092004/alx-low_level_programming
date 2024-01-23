@@ -6,9 +6,9 @@
  */
 char str_len(char *dest)
 {
-int lenth = 0;
+int lenth;
 
-for (; dest[lenth] != '\0'; lenth++)
+for (lenth = 0; dest[lenth] != '\0'; lenth++)
 {
 }
 return (lenth);
@@ -21,23 +21,27 @@ return (lenth);
  */
 char *str_concat(char *s1, char *s2)
 {
-int i = 0;
+int i;
 char *ptr;
-if (s1 == 0)
+if (s1 == NULL)
 s1 = '\0';
-if (s2 == 0)
+if (s2 == NULL)
 s2 = '\0';
 int lenth_of_s1 = str_len(s1);
 int lenth_of_s2 = str_len(s2);
-ptr = malloc((lenth_of_s1 + lenth_of_s2) * sizeof(char));
+ptr = malloc((lenth_of_s1 + lenth_of_s2) * sizeof(char) + 1);
 if (ptr == 0)
 return (NULL);
-for (; lenth_of_s1 + lenth_of_s2 ; i++)
+for (i = 0 ; lenth_of_s1 + lenth_of_s2 ; i++)
 {
 if (i < lenth_of_s1)
+{
 ptr[i] = s1[i];
+}
 else
+{
 ptr[i] = s2[i];
+}
 }
 ptr[i] = '\0';
 return (ptr);
