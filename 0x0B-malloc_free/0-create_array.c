@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * *create_array - creat array
+ * *create_array - create array
  * @size: size of the array
  * @c: char of array
  * Return: pointer x if size or x != 0 or NULL if x or size == 0
