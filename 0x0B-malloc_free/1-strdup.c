@@ -32,4 +32,5 @@ for (i = 0; i < lenth; i++)
 m[i] = str[i];
 }
 }
+return(arr)
 }
