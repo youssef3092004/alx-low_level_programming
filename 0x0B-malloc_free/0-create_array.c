@@ -3,17 +3,15 @@
  * *create_array - creat array
  * @size: size of the array
  * @c: char of array
- * Return: pointer n if size or n != 0 or NULL if n or size == 0
+ * Return: pointer x if size or x != 0 or NULL if x or size == 0
  */
 char *create_array(unsigned int size, char c)
 {
-char *n = malloc(size);
+char *x = malloc(size);
 
-if (size == 0)
+if (size == 0 || x == 0)
 return (0);
 while (size--)
-{
-n[size] = c;
-}
-return (n);
+x[size] = c;
+return (x);
 }
