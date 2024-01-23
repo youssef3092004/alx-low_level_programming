@@ -2,35 +2,30 @@
 #include <string.h>
 
 /**
- * *_strdup - copy the deta of str to arr
+ * *_strdup - copy the deta of str to ptr
  * @str: it's a string
- * Return: NULL if str or arr == 0 or 0
+ * Return: NULL if str or ptr == 0 or 0
  */
 
 char *_strdup(char *str)
 {
-int i, j;
-char *arr;
+int i = 0, j = 0;
+char *ptr;
 
 if (str == 0)
-{
 return (NULL);
-}
-for (j = 0; str[j] != '\0'; j++)
+for (; str[j] != '\0'; j++)
 {
-
 }
-arr = malloc(j * sizeof(*str) + 1);
-if (arr == 0)
+ptr = malloc(j * sizeof(*str) + 1);
+if (ptr == 0)
 {
 return (NULL);
 }
 else
 {
-for (i = 0; i < j; i++)
-{
-m[i] = str[i];
+for (; i < j; i++)
+ptr[i] = str[i];
 }
-}
-return(arr)
+return (ptr);
 }
