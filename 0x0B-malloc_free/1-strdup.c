@@ -9,10 +9,10 @@
 
 char *_strdup(char *str)
 {
-int lenth, i, j;
+int i, j;
 char *arr;
 
-if (str == 0)
+if (str == NULL)
 {
 return (NULL);
 }
@@ -21,7 +21,7 @@ for (j = 0; str[j] != '\0'; j++)
 
 }
 arr = malloc(j * sizeof(*str) + 1);
-if (arr == 0)
+if (arr == NULL)
 {
 return (NULL);
 }
