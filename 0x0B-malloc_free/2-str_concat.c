@@ -33,7 +33,7 @@ lenths2 = str_len(s2);
 ptr = malloc((lenths1 + lenths2) * sizeof(char) + 1);
 if (ptr == 0)
 return (NULL);
-for (i = 0 ; i <= lenths1 + lenths2 ; i++)
+for (i = 0 ; i < lenths1 + lenths2 ; i++)
 {
 if (i < lenths1)
 {
@@ -41,7 +41,7 @@ ptr[i] = s1[i];
 }
 else
 {
-ptr[i] = s2[i];
+ptr[i] = s2[i - lenths1];
 }
 }
 ptr[i] = '\0';
