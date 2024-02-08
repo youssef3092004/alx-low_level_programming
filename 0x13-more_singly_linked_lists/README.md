@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+asd
+=======
 ## More singly linked lists.
 
 
@@ -91,3 +94,4 @@ Returns: The address of the node where the loop starts, or NULL if there is no l
 You are not allowed to use malloc, free or arrays.
 You can only declare a maximum of two variables in your function.
 
+>>>>>>> 43c1822eba2ed21edebcb5512c3f0f8909a93e67
