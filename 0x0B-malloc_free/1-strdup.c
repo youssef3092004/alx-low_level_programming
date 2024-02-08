@@ -1,31 +1,29 @@
 #include "main.h"
-#include <string.h>
-
+#include <stdlib.h>
 /**
- * *_strdup - copy the deta of str to ptr
- * @str: it's a string
- * Return: NULL if str or ptr == 0 or 0
+ * _strdup - returns a pointer to a newly allocated space in memory.
+ * @str: string.
+ *
+ * Return: pointer of an array of chars
  */
-
 char *_strdup(char *str)
 {
-int i = 0, j = 0;
-char *ptr;
+	char *strout;
+	unsigned int i, j;
 
-if (str == 0)
-return (NULL);
-for (; str[j] != '\0'; j++)
-{
-}
-ptr = malloc(j * sizeof(*str) + 1);
-if (ptr == 0)
-{
-return (NULL);
-}
-else
-{
-for (; i < j; i++)
-ptr[i] = str[i];
-}
-return (ptr);
+	if (str == NULL)
+		return (NULL);
+
+	for (i = 0; str[i] != '\0'; i++)
+		;
+
+	strout = (char *)malloc(sizeof(char) * (i + 1));
+
+	if (strout == NULL)
+		return (NULL);
+
+	for (j = 0; j <= i; j++)
+		strout[j] = str[j];
+
+	return (strout);
 }
