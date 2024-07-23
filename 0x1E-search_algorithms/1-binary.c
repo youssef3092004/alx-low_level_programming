@@ -22,7 +22,7 @@ first = 0;
 last = size - 1;
 
 while (first <= last)
-{        
+{
 middle = (first + last) / 2;
 if (array[middle] == value)
 return (middle);
