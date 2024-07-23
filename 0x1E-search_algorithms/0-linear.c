@@ -13,12 +13,12 @@ size_t i;
 for (i = 0; i < size; i++)
 {
 if (array[i] == value) {
-printf("Value checked array[%d] = %d\n", i, array[i]);
+printf("Value checked array[%zu] = %d\n", i, array[i]);
 return (i);
 }
 else
 {
-printf("Value checked array[%d] = %d\n", i, array[i]);
+printf("Value checked array[%zu] = %d\n", i, array[i]);
 }
 }
 return (-1);
