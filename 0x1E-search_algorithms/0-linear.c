@@ -1,5 +1,4 @@
-#include "main.h"
-/**
+#include "search_algos.h"/**
  * linear_search - Performs a linear search on an integer array.
  * @array: The integer array to be searched.
  * @size: The number of elements in the array.
