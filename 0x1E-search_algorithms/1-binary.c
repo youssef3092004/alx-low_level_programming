@@ -1,12 +1,6 @@
 #include "search_algos.h"
 #include <stdio.h>
 
-/**
-* print_array - Prints the current part of the array being searched.
-* @array: The array to be printed.
-* @first: The starting index of the current subarray.
-* @last: The ending index of the current subarray.
-*/
 void print_array(int *array, size_t first, size_t last)
 {
 size_t i;
