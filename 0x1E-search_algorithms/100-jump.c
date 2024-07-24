@@ -1,49 +1,55 @@
 #include "search_algos.h"
 #include <stdio.h>
 #include <math.h>
+
+/**
+* jump_search - Searches for a value in a sorted array of integers using the
+*                Jump Search algorithm.
+* @array: Pointer to the first element of the array to search in.
+* @size: Number of elements in the array.
+* @value: Value to search for.
+*
+* Return: The first index where the value is located, or -1 if the value is not
+*         present or if the array is NULL.
+*
+* Description: This function performs the Jump Search algorithm to find the
+*              given value in a sorted array of integers. It prints the value
+*              checked at each step and the range where the value is found.
+*/
 int jump_search(int *array, size_t size, int value)
 {
-    size_t  jumb = 0, ptrone = 0, ptrtwo = 0, i = 0;
-    jumb = sqrt(size);
-    if (!array || !size)
-        return (-1);
-    while (ptrone < size && array[ptrone] <= value)
-        {
-        printf("Value checked array[%lu] = [%d]\n", ptrone, array[ptrone]);
-        if (ptrtwo >= size)
-            ptrtwo = size - 1;
-        else
-            ptrtwo = ptrone + jumb;
-        if (value >= array[ptrone] && value <= array[ptrtwo])
-        {
-            printf("Value found between indexes [%lu] and [%lu]\n",ptrone, ptrtwo);
-            for (i = ptrone; i <= ptrtwo && i < size; i++)
-                {
-                    if (array[i] == value)
-                    {
-                        printf("Value checked array[%lu] = [%d]\n", i, array[i]);
-                        return (i);
-                    }
-                    else
-                    {
-                        printf("Value checked array[%lu] = [%d]\n", i, array[i]);
-                    }
-                }
-            }
-        ptrone += jumb;
-        }
-    return (-1);
+size_t jumb = 0, ptrone = 0, ptrtwo = 0, i = 0;
+
+jumb = sqrt(size);
+
+if (!array || !size)
+{
+return (-1);
 }
 
-int main(void)
+while (ptrone < size && array[ptrone] <= value)
 {
-    int array[] = {
-        0, 1, 2, 3, 4, 5, 6, 7, 8, 9
-    };
-    size_t size = sizeof(array) / sizeof(array[0]);
+printf("Value checked array[%lu] = [%d]\n", ptrone, array[ptrone]);
 
-    printf("Found %d at index: %d\n\n", 6, jump_search(array, size, 6));
-    printf("Found %d at index: %d\n\n", 1, jump_search(array, size, 1));
-    printf("Found %d at index: %d\n", 999, jump_search(array, size, 999));
-    return (0);
+ptrtwo = ptrone + jumb;
+if (ptrtwo >= size)
+{
+ptrtwo = size - 1;
+}
+
+printf("Value found between indexes [%lu] and [%lu]\n", ptrone, ptrtwo);
+
+for (i = ptrone; i <= ptrtwo; i++)
+{
+printf("Value checked array[%lu] = [%d]\n", i, array[i]);
+if (array[i] == value)
+{
+return (i);
+}
+}
+
+ptrone += jumb;
+}
+
+return (-1);
 }
